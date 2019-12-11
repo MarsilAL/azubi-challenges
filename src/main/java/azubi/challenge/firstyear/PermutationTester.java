@@ -13,6 +13,10 @@ public class PermutationTester {
      */
     public static boolean isPermutationOfOther(String first, String second) {
         // implement me
+
+        if (first.isEmpty() && second.isEmpty()){
+            return true;
+        }
         return false;
     }
 }

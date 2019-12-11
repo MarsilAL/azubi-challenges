@@ -10,6 +10,22 @@ public class UniqueCharsTester {
      */
     public static boolean hasUniqueChars(String candidate) {
         // implement me
+
+        int x = candidate.length();
+        for (int i = 0; i < x; i++){
+            for (int j = i+1; j < x; j++){
+                if(candidate.charAt(i) == candidate.charAt(j)){
+                    return false;
+                }
+            }
+        }
+        
+
+        int lengthOfCandidate = candidate.length();
+        if (lengthOfCandidate == 1) {
+            return true;
+        }
         return false;
     }
+    
 }
