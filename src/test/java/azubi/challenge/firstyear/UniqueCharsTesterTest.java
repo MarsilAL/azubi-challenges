@@ -29,6 +29,6 @@ public class UniqueCharsTesterTest {
     @Test
     public void WordWithTwoSpaces_should_BeFalse() {
         boolean actual = UniqueCharsTester.hasUniqueChars("a bc d");
-        assertfalse(actual);
+        assertFalse(actual);
     }
 }

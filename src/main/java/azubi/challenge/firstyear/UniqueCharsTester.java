@@ -3,8 +3,8 @@ package main.java.azubi.challenge.firstyear;
 public class UniqueCharsTester {
 
     /**
-     * hasUniqueChars returs true, when the given string consists only of 
-     * unique chars, false otherwise
+     * hasUniqueChars returs true, when the given string consists only of unique
+     * chars, false otherwise
      * 
      * @param candidate given String to test
      */
@@ -12,20 +12,15 @@ public class UniqueCharsTester {
         // implement me
 
         int x = candidate.length();
-        for (int i = 0; i < x; i++){
-            for (int j = i+1; j < x; j++){
-                if(candidate.charAt(i) == candidate.charAt(j)){
+        for (int i = 0; i < x; i++) {
+            for (int j = i + 1; j < x; j++) {
+                if (candidate.charAt(i) == candidate.charAt(j)) {
                     return false;
                 }
             }
         }
-        
 
-        int lengthOfCandidate = candidate.length();
-        if (lengthOfCandidate == 1) {
-            return true;
-        }
-        return false;
+        return true;
     }
-    
+
 }

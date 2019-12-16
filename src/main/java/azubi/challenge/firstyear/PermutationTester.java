@@ -17,6 +17,19 @@ public class PermutationTester {
         if (first.isEmpty() && second.isEmpty()){
             return true;
         }
+
+        int x = first.length();
+        int y = second.length();
+
+        for (int i = 0; i < x; i++){
+            if (i > 0){y = y--;}
+
+            if(first.charAt(i) == second.charAt(y-1)){
+
+                return true;
+            }
+        
+        }
         return false;
     }
 }
