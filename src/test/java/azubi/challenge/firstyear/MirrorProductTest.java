@@ -22,7 +22,15 @@ public class MirrorProductTest {
     public void isThis4DPalindromeProductOrNot(){
         int actual = MirrorProduct.findLargestMirrorProduct(9999, 9999);
 
-        int expected = 99000099;
+        int expected = 1997997991;
+        System.out.println(actual);
+        assertEquals(expected, actual);
+    }
+    @Test 
+    public void isThis3DPalindromeProductOrNot(){
+        int actual = MirrorProduct.findLargestMirrorProduct(999, 999);
+
+        int expected = 698896;
 
         assertEquals(expected, actual);
     }
